@@ -1,0 +1,40 @@
+.arrowMenu.left{
+    outline: none;
+    border: none;
+    background: none;
+    display: inline-block;
+    height: 100px;
+    padding: 35px 25px;
+        .text-menu{
+            font-size: 20px;
+        }
+        .arrowShapeLeft{
+            background: black;
+            display: block;
+            height: 3px;
+            margin: 0 0 10px;
+            transition: all 0.3s ease-in-out;
+            width: 40px;
+                &:first-child{
+                    width: 30px;
+                    transform: rotate(-68deg) translate(-7px, 11px);
+                    transform-origin: 10px;
+                }
+                &:nth-child(2){
+                    transform: rotate(45deg);
+                    transform-origin: -9px;
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                    transform-origin: -9px;
+                }
+                &:nth-child(4){
+                    width: 30px;
+                    transform: rotate(68deg) translate(-7px, -11px);
+                    transform-origin: 10px;
+                }
+            &:hover{
+
+            }
+        }
+}

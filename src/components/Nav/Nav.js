@@ -34,7 +34,7 @@ class Nav extends Component {
 
     slideToggle = () => {
 
-        let initHeight = 200;
+        let initHeight = 100;
         let initWidth = 20;
 
         const mdiv = document.getElementsByClassName('mobile-header-nav');
@@ -74,13 +74,7 @@ class Nav extends Component {
                                 <a href="/">Main</a>
                             </li>
                             <li>
-                                <a href="/character/1">Example1</a>
-                            </li>
-                            <li>
-                                <a href="/character/2">Example2</a>
-                            </li>
-                            <li>
-                                <a href="/character/3">Example3</a>
+                                <a href="/about">About</a>
                             </li>
                         </div>
                     </ul>
