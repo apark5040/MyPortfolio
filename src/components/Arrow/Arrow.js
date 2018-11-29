@@ -3,14 +3,14 @@ import "./Arrow.scss";
 
 const Arrow = props => {
     return (
-        <div>
-            <button className={`arrowMenu ${ props.direction }`}>
-                <span className="arrowShapeLeft"></span>
-                <span className="arrowShapeLeft"></span>
-                <span className="arrowShapeLeft"></span>
-                <span className="arrowShapeLeft"></span>
+        <div className="arrowMenu">
+            <a className={`alignCenter ${props.direction}`} href={props.link}>
+                <span className="arrowShape"></span>
+                <span className="arrowShape"></span>
+                <span className="arrowShape"></span>
+                <span className="arrowShape"></span>
                 <p className="text-menu">{props.children}</p>
-            </button>
+            </a>
         </div>
     );
 

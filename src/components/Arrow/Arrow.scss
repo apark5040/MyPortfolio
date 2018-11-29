@@ -1,40 +1,182 @@
-.arrowMenu.left{
+.arrowMenu {
     outline: none;
     border: none;
     background: none;
-    display: inline-block;
     height: 100px;
     padding: 35px 25px;
-        .text-menu{
+    .left {
+        outline: none;
+        border: none;
+        background: none;
+        text-decoration:none;
+        .text-menu {
             font-size: 20px;
+            transition: all 0.3s ease-in-out;
         }
-        .arrowShapeLeft{
+        .arrowShape {
             background: black;
             display: block;
             height: 3px;
             margin: 0 0 10px;
             transition: all 0.3s ease-in-out;
             width: 40px;
-                &:first-child{
-                    width: 30px;
-                    transform: rotate(-68deg) translate(-7px, 11px);
-                    transform-origin: 10px;
-                }
-                &:nth-child(2){
-                    transform: rotate(45deg);
-                    transform-origin: -9px;
-                }
-                &:nth-child(3){
-                    transform: rotate(-45deg);
-                    transform-origin: -9px;
-                }
-                &:nth-child(4){
-                    width: 30px;
-                    transform: rotate(68deg) translate(-7px, -11px);
-                    transform-origin: 10px;
-                }
-            &:hover{
-
+            &:first-child {
+                width: 30px;
+                transform: rotate(-68deg) translate(-7px, 11px);
+                transform-origin: 10px;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+                transform-origin: -9px;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: -9px;
+            }
+            &:nth-child(4) {
+                width: 30px;
+                transform: rotate(68deg) translate(-7px, -11px);
+                transform-origin: 10px;
             }
         }
+        &:hover {
+            .text-menu {
+                transform: translateY(-30px);
+            }
+            .arrowShape{
+                &:first-child {
+                    transform: rotate(90deg) translate(30px, 15px);
+                }
+                &:nth-child(2) {
+                    transform: rotate(0deg) translate(7px, 0px);
+                }
+                &:nth-child(3) {
+                    transform: rotate(0deg) translate(7px, 30px);
+                }
+                &:nth-child(4){
+                    transform: rotate(270deg) translate(-1px, 50px);
+                }
+            }
+        }
+    }
+    .right {
+        outline: none;
+        border: none;
+        background: none;
+        text-decoration:none;
+        float: right;
+        .text-menu {
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .arrowShape {
+            background: black;
+            display: block;
+            height: 3px;
+            margin: 0 0 10px;
+            transition: all 0.3s ease-in-out;
+            width: 40px;
+            &:first-child {
+                width: 30px;
+                transform: rotate(68deg) translate(4px, -9px);
+                transform-origin: 8px;
+            }
+            &:nth-child(2) {
+                transform: rotate(-45deg);
+                transform-origin: 49px;
+            }
+            &:nth-child(3) {
+                transform: rotate(45deg);
+                transform-origin: 49px;
+            }
+            &:nth-child(4) {
+                width: 30px;
+                transform: rotate(-68deg) translate(4px, 9px);
+                transform-origin: 8px;
+            }
+        }
+        &:hover {
+            .text-menu {
+                transform: translateY(-30px);
+            }
+            .arrowShape{
+                &:first-child {
+                    transform: rotate(90deg) translate(30px, 15px);
+                }
+                &:nth-child(2) {
+                    transform: rotate(0deg) translate(12px, 0px);
+                }
+                &:nth-child(3) {
+                    transform: rotate(0deg) translate(12px, 33px);
+                }
+                &:nth-child(4){
+                    transform: rotate(270deg) translate(-4px, 68px);
+                }
+            }
+        }
+    }
+    .down {
+        outline: none;
+        border: none;
+        background: none;
+        text-decoration:none;
+        float: none;
+        position: relative;
+        top: 250px;
+        .text-menu {
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .arrowShape {
+            background: black;
+            display: block;
+            height: 3px;
+            margin: 0 0 10px;
+            transition: all 0.3s ease-in-out;
+            width: 40px;
+            &:first-child {
+                width: 30px;
+                transform: rotate(-25deg) translate(14px, 48px);
+                transform-origin: 6px;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg) translate(9px, -5px);
+                transform-origin: -15px;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(11px, 27px);
+                transform-origin: 25px;
+            }
+            &:nth-child(4) {
+                width: 30px;
+                transform: rotate(-152deg) translate(-15px, 11px);
+                transform-origin: 8px;
+            }
+        }
+        &:hover {
+            .text-menu {
+                transform: translateY(-30px);
+            }
+            .arrowShape{
+                &:first-child {
+                    transform: rotate(90deg) translate(30px, 15px);
+                }
+                &:nth-child(2) {
+                    transform: rotate(0deg) translate(12px, 0px);
+                }
+                &:nth-child(3) {
+                    transform: rotate(0deg) translate(12px, 33px);
+                }
+                &:nth-child(4){
+                    transform: rotate(270deg) translate(-4px, 68px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .text-menu {
+        font-size: 10px;
+    }
 }

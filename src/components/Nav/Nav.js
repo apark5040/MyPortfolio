@@ -1,40 +1,41 @@
 import React, { Component } from "react";
 import "./Nav.scss";
+import github from "./github.png";
 
 class Nav extends Component {
 
     constructor(props) {
         super(props);
-    
+
         this.state = {
             isOpen: false,
             addOpen: ""
         };
-    
+
         //I will look up why this solves state undefined issue
         this.handleCloseMenu = this.handleCloseMenu.bind(this);
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
 
     }
 
-    handleCloseMenu(){
-        if(this.state.isOpen){
+    handleCloseMenu() {
+        if (this.state.isOpen) {
             this.slideToggle();
         }
-        else{
+        else {
             return;
         }
     }
 
     slideToggle = () => {
 
-        let initHeight = 100;
+        let initHeight = 200;
         let initWidth = 20;
 
         const mdiv = document.getElementsByClassName('mobile-header-nav');
@@ -76,6 +77,12 @@ class Nav extends Component {
                             <li>
                                 <a href="/about">About</a>
                             </li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio">Portfolio</a>
+                            </li>
                         </div>
                     </ul>
                 </nav>
@@ -85,6 +92,11 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                     <span className="menu-item"></span>
                 </button>
+                <a href="/">Home</a>
+
+                <a href="https://github.com/apark5040">
+                    <img className="githubImg" src={github} alt="github" />
+                </a>
             </header>
 
         );
