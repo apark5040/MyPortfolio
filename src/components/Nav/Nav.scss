@@ -28,11 +28,11 @@ header {
   background-color: #e3e7ed;
   z-index: 1;
   height: 0px;
-  list-style: none; // replace with %styled-list
-  margin: 0; // replace with %styled-list
-  padding: 0; // replace with %styled-list
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
   position: absolute;
-  top: 100px; // if nav sliding in below header
+  top: 100px; 
   width: 20%;
   transition: all 0.3s ease-in-out;
   .listItems {
@@ -58,6 +58,9 @@ header {
   height: 100px;
   padding: 35px 25px;
   transition: all 0.3s ease-in-out;
+  &:focus {
+    outline: 0;
+  }
   &:hover {
     cursor: pointer;
   }

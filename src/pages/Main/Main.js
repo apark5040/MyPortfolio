@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "reactstrap";
 import Arrow from "../../components/Arrow";
 
 class Main extends Component {
@@ -14,18 +14,14 @@ class Main extends Component {
                         <Col md="4" sm="4" xs="4"><Arrow direction="right" link="/contact">Contact</Arrow></Col>
                     </Row>
                     <Row>
-                        <Col md="12">
+                        <Col sm="12" md={{ size: 5, offset: 3 }}>
                             <h1 className="text-center" >Andrew Park</h1>
                         </Col>
                     </Row>
                     <Row>
-                        <Col md="4" />
-                        <Col md="1" />
-                        <Col md="2">
+                        <Col sm="12" xs={{ size: 5, offset: 5 }}>
                             <Arrow direction="down" link="/portfolio">Portfolio</Arrow>
-                        </Col>
-                        <Col md="2" />
-                        <Col md="4" />
+                        </Col>  
                     </Row>
                 </Container>
             </div>
