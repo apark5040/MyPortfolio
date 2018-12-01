@@ -19,7 +19,7 @@ class Main extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col sm="12" xs={{ size: 5, offset: 5 }}>
+                        <Col sm={{ size: 'auto', offset: 5 }}>
                             <Arrow direction="down" link="/portfolio">Portfolio</Arrow>
                         </Col>  
                     </Row>
