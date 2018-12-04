@@ -14,80 +14,44 @@ class Nav extends Component {
 
         //I will look up why this solves state undefined issue
         this.handleCloseMenu = this.handleCloseMenu.bind(this);
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillUnmount() {
-
+        this.openNav = this.openNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
     }
 
     handleCloseMenu() {
         if (this.state.isOpen) {
-            this.slideToggle();
+            this.closeNav();
         }
         else {
             return;
         }
     }
 
-    slideToggle = () => {
+    openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.marginLeft = "250px";
 
-        let initHeight = 220;
-        let initWidth = 20;
+        this.setState({isOpen: true, addOpen: "open"});
+    }
 
-        const mdiv = document.getElementsByClassName('mobile-header-nav');
-        const divStyle = mdiv[0].style;
+    closeNav() {
+        document.getElementById("mySidenav").style.width = "0px";
+        document.body.style.marginLeft = "0px";
 
-        var items = document.getElementsByClassName('listItems');
-        var itemsStyle = items[0].style;
-
-        if (this.state.isOpen) {
-            divStyle.height = '0px';
-            itemsStyle.display = "none";
-
-            this.setState({
-                isOpen: false,
-                addOpen: ""
-            });
-        }
-        else {
-            this.setState({
-                isOpen: true,
-                addOpen: "open"
-            });
-            divStyle.height = initHeight + 'px';
-            divStyle.width = initWidth + 'vw';
-            itemsStyle.display = "block";
-
-        }
+        this.setState({isOpen: false, addOpen: ""});
     }
 
     render() {
         return (
             <header onClick={this.handleCloseMenu}>
-                <nav className="mobile-header-wrap" role="navigation">
-                    <ul className="mobile-header-nav">
-                        <div className="listItems">
-                            <li>
-                                <a href="/">Main</a>
-                            </li>
-                            <li>
-                                <a href="/about">About</a>
-                            </li>
-                            <li>
-                                <a href="/contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="/portfolio">Portfolio</a>
-                            </li>
-                        </div>
-                    </ul>
-                </nav>
+                <div id="mySidenav" className="sidenav">
+                    <button className="closebtn" onClick={this.closeNav}>&times;</button>
+                    <a href="/about">About</a>
+                    <a href="/portfolio">Portfolio</a>
+                    <a href="/contact">Contact</a>
+                </div>
 
-                <button className={`mobile-menu-toggle nav-menu ${this.state.addOpen}`} onClick={this.slideToggle}>
+                <button className={`mobile-menu-toggle nav-menu ${this.state.addOpen}`} onClick={this.openNav}>
                     <span className="menu-item"></span>
                     <span className="menu-item"></span>
                     <span className="menu-item"></span>
