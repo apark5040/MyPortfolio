@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Arrow from "../../components/Arrow";
+import "./Contact.scss";
 
 class Contact extends Component {
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Nav from "./components/Nav";
@@ -14,6 +14,9 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars3" />
           <Nav />
           <Switch>
             <Route exact path="/" component={PageShell(Main)}></Route>

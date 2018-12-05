@@ -1,3 +1,5 @@
+$arrowColor: linear-gradient(90deg, rgba(37,47,73,1) 0%, rgba(197,203,223,1) 50%, rgba(68,79,112,1) 100%);
+
 .arrowMenu {
     outline: none;
     border: none;
@@ -12,9 +14,10 @@
         .text-menu {
             font-size: 20px;
             transition: all 0.3s ease-in-out;
+            color: white;
         }
         .arrowShape {
-            background: black;
+            background: $arrowColor;
             display: block;
             height: 3px;
             margin: 0 0 10px;
@@ -68,9 +71,10 @@
         .text-menu {
             font-size: 20px;
             transition: all 0.3s ease-in-out;
+            color: white;
         }
         .arrowShape {
-            background: black;
+            background: $arrowColor;
             display: block;
             height: 3px;
             margin: 0 0 10px;
@@ -121,14 +125,17 @@
         background: none;
         text-decoration:none;
         float: none;
-        position: relative;
-        top: 200px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: -50px;
         .text-menu {
             font-size: 20px;
             transition: all 0.3s ease-in-out;
+            color: white;
         }
         .arrowShape {
-            background: black;
+            background: $arrowColor;
             display: block;
             height: 3px;
             margin: 0 0 10px;

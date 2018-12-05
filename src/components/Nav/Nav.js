@@ -29,14 +29,14 @@ class Nav extends Component {
 
     openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.body.style.marginLeft = "250px";
+        // document.body.style.marginLeft = "250px";
 
         this.setState({isOpen: true, addOpen: "open"});
     }
 
     closeNav() {
         document.getElementById("mySidenav").style.width = "0px";
-        document.body.style.marginLeft = "0px";
+        // document.body.style.marginLeft = "0px";
 
         this.setState({isOpen: false, addOpen: ""});
     }
