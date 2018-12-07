@@ -1,5 +1,5 @@
 .SlideIn-appear {
-    transform: translateX(30px);
+    transform: translateX(50px);
     opacity: 0;
 }
 
@@ -12,7 +12,7 @@
 
 .SlideIn-enter {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(50px);
 }
 
 .SlideIn-enter.SlideIn-enter-active {
@@ -30,6 +30,6 @@
     opacity: 0;
     position: absolute;
     width: 100%;
-    transform: translateX(-30px);
+    transform: translateX(-50px);
     transition: all 1s linear;
 }
