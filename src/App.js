@@ -19,7 +19,7 @@ class App extends Component {
           <div id="stars3" />
           <Nav />
           <Switch>
-            <Route exact path="/" component={PageShell(Main)}></Route>
+            <Route exact path="/" component={Main}></Route>
             <Route exact path="/about" component={PageShell(About)}></Route>
             <Route exact path="/contact" component={PageShell(Contact)}></Route>
             <Route exact path="/portfolio" component={PageShell(Portfolio)}></Route>
