@@ -58,9 +58,11 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                     <span className="menu-item"></span>
                 </button>
-                <a href="/">
-                    <img className="logo" src={logo} alt="Andrew" />
-                </a>
+
+                <a className="navLink" href="/">Home</a>
+                <a className="navLink" href="/about">About</a>
+                <a className="navLink" href="/portfolio">Portfolio</a>
+                <a className="navLink" href="/contact">Contact</a>
 
                 <a href="https://github.com/apark5040">
                     <img className="githubImg" src={github} alt="github" />

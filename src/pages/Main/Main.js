@@ -20,13 +20,13 @@ class Main extends Component {
             <div>
                 <Container>
                     <Row>
-                        <Spring config={{ delay: 2000, duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
+                        {/* <Spring config={{ delay: 2000, duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
                             {props => <Col xs={{ size: 2, offset: 1 }} style={props}><Arrow direction="left" link="/about">About</Arrow></Col>}
                         </Spring>
 
                         <Spring config={{ delay: 2500, duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
                             {props => <Col xs={{ size: 2, offset: 6 }} style={props}><Arrow direction="right" link="/contact">Contact</Arrow></Col>}
-                        </Spring>
+                        </Spring> */}
                     </Row>
                     <Row>
                         <Col md={{ size: 4, offset: 4 }}>
@@ -42,9 +42,9 @@ class Main extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Spring config={{ delay: 3000, duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
+                        {/* <Spring config={{ delay: 3000, duration: 2000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
                             {props => <Col xs={{ size: 2, offset: 6 }} style={props}><Arrow direction="down" link="/portfolio">Portfolio</Arrow></Col>}
-                        </Spring>
+                        </Spring> */}
                     </Row>
                 </Container>
             </div>

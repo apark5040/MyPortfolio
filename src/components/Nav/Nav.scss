@@ -6,9 +6,8 @@ body {
   transition: .5s;
 }
 
-.logo {
-  height: 70px;
-  width: 70px;
+.navLink {
+  margin: 10px;
 }
 
 .githubImg {
@@ -61,9 +60,6 @@ header {
   &:focus {
     outline: 0;
   }
-  &:hover {
-    cursor: pointer;
-  }
   .menu-item {
     background: linear-gradient(90deg, rgba(37,47,73,1) 0%, rgba(197,203,223,1) 50%, rgba(68,79,112,1) 100%);
     display: block;
@@ -72,7 +68,7 @@ header {
     transition: all 0.3s ease-in-out;
     width: 40px;
   }
-  &.open {
+  &:hover {
     .menu-item {
       margin: 0 0 5px;
       &:first-child {

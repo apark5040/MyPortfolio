@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import Arrow from "../../components/Arrow";
 import "./Contact.scss";
 
@@ -10,22 +10,30 @@ class Contact extends Component {
             <div>
                 <Container>
                     <Row>
-                        <Col xs={{ size: 2, offset: 1 }}><Arrow direction="left" link="/about">About</Arrow></Col>
-                        <Col xs={{ size: 4, offset: 1 }}>
-                            <h1>Contact info</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ultricies odio id hendrerit. Duis convallis consectetur velit ultricies maximus. Nullam quis sollicitudin orci. Cras sapien nisi, sagittis pellentesque nisl vitae, aliquam accumsan augue. Donec et augue varius nibh malesuada rutrum. Phasellus ut enim a quam vulputate pharetra. Aliquam quis suscipit elit, ac rutrum dui. Donec nec luctus eros. Phasellus convallis maximus neque, quis pulvinar enim.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ultricies odio id hendrerit. Duis convallis consectetur velit ultricies maximus. Nullam quis sollicitudin orci. Cras sapien nisi, sagittis pellentesque nisl vitae, aliquam accumsan augue. Donec et augue varius nibh malesuada rutrum. Phasellus ut enim a quam vulputate pharetra. Aliquam quis suscipit elit, ac rutrum dui. Donec nec luctus eros. Phasellus convallis maximus neque, quis pulvinar enim.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ultricies odio id hendrerit. Duis convallis consectetur velit ultricies maximus. Nullam quis sollicitudin orci. Cras sapien nisi, sagittis pellentesque nisl vitae, aliquam accumsan augue. Donec et augue varius nibh malesuada rutrum. Phasellus ut enim a quam vulputate pharetra. Aliquam quis suscipit elit, ac rutrum dui. Donec nec luctus eros. Phasellus convallis maximus neque, quis pulvinar enim.
-                            </p>
+                        <Col xs={{ size: 10, offset: 1 }}>
+                            <div className="contactText text-center">
+                                <h1>Contact info</h1>
+                                <p>If you are looking for a developer that loves to create things with passion, please contact me!</p>
+                                <Form>
+                                    <FormGroup>
+                                        <Label for="exampleEmail">Email</Label>
+                                        <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here" />
+                                    </FormGroup>
+
+                                    <FormGroup>
+                                        <Label for="exampleText">Text Area</Label>
+                                        <Input type="textarea" name="text" id="exampleText" />
+                                    </FormGroup>
+                                    <Button>Submit</Button>
+                                </Form>
+
+                            </div>
                         </Col>
                     </Row>
                     <Row>
-                    <Col xs={{ size: 2, offset: 6 }}>
-                        <Arrow direction="down" link="/portfolio">Portfolio</Arrow>
-                    </Col>
-                </Row>
+                    </Row>
                 </Container>
-            </div>
+            </div >
         );
     }
 }
