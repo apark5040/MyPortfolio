@@ -8,36 +8,52 @@ class About extends Component {
     state = {
         skills: [
             {
+                id: 1,
                 name: "HTML",
-                number: 80
+                number: 80,
+                time: 0
             },
             {
+                id: 2,
                 name: "CSS",
-                number: 60
+                number: 60,
+                time: 200
             },
             {
+                id: 3,
                 name: "JavaScript/jQuery",
-                number: 70
+                number: 70,
+                time: 400
             },
             {
+                id: 4,
                 name: "Bootstrap",
-                number: 80
+                number: 80,
+                time: 600
             },
             {
+                id: 5,
                 name: "React.js",
-                number: 50
+                number: 50,
+                time: 800
             },
             {
+                id: 6,
                 name: "Node.js",
-                number: 50
+                number: 50,
+                time: 1000
             },
             {
+                id: 7,
                 name: "SQL",
-                number: 45
+                number: 45,
+                time: 1200
             },
             {
+                id: 8,
                 name: "MongoDB",
-                number: 60
+                number: 60,
+                time: 1400
             }
         ]
     }
@@ -50,22 +66,21 @@ class About extends Component {
             <div>
                 <Container>
                     <Row>
-                        <Col xs={{ size: 4, offset: 1 }}>
-                            <div className="aboutText">
-                                <h1>About me</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ultricies odio id hendrerit. Duis convallis consectetur velit ultricies maximus. Nullam quis sollicitudin orci. Cras sapien nisi, sagittis pellentesque nisl vitae, aliquam accumsan augue. Donec et augue varius nibh malesuada rutrum. Phasellus ut enim a quam vulputate pharetra. Aliquam quis suscipit elit, ac rutrum dui. Donec nec luctus eros. Phasellus convallis maximus neque, quis pulvinar enim.</p>
-                            </div>
+                        <Col className="aboutText" xs={{ size: 4, offset: 1 }}>
+                            <h1 className="size-decrease">About me</h1>
+                            <p>My name is Andrew Park.</p>
                         </Col>
                         <Col xs={{ size: 6, offset: 1 }}>
                             <div className="skills">
                                 <h1 className="text-center">Skills</h1>
                                 {this.state.skills.map(skills => {
                                     return (
-                                        <div>
+                                        <div key={skills.id}>
                                             <div className="text-center">{skills.name}</div>
                                             <Spring
                                                 from={{ value: 0 }}
-                                                to={{ value: skills.number }}>
+                                                to={{ value: skills.number }}
+                                                config={{ delay: skills.time }}>
                                                 {props => <Progress color="info" value={props.value} />
                                                 }
                                             </Spring>

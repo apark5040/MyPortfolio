@@ -2,23 +2,27 @@
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 50px;
+}
+
 body {
   transition: .5s;
 }
 
-.navLink {
-  margin: 10px;
-}
-
-.githubImg {
-  float: right;
-  margin: 0 auto;
-  position: relative;
-  top: 10px;
-  right: 10px;
-  background: white;
-  border-radius: 10px;
-}
+.currentPath {
+    background-color: darkred;
+  }
+  
+  .githubImg {
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 10px;
+  }
 
 // basic header styles
 header {

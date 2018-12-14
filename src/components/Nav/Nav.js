@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+// import {Spring} from "react-spring";
+import NavLink from "../NavLink";
 import "./Nav.scss";
 import github from "./github.png";
-import logo from "./logo.png";
 
 class Nav extends Component {
 
@@ -59,10 +60,11 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                 </button>
 
-                <a className="navLink" href="/">Home</a>
-                <a className="navLink" href="/about">About</a>
-                <a className="navLink" href="/portfolio">Portfolio</a>
-                <a className="navLink" href="/contact">Contact</a>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/portfolio">Portfolio</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+
 
                 <a href="https://github.com/apark5040">
                     <img className="githubImg" src={github} alt="github" />

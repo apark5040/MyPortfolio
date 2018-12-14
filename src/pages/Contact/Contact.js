@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
-import Arrow from "../../components/Arrow";
+import { Container, Row, Col } from "reactstrap";
 import "./Contact.scss";
 
 class Contact extends Component {
@@ -14,7 +13,7 @@ class Contact extends Component {
                             <div className="contactText text-center">
                                 <h1>Contact info</h1>
                                 <p>If you are looking for a developer that loves to create things with passion, please contact me!</p>
-                                <Form>
+                                {/* <Form>
                                     <FormGroup>
                                         <Label for="exampleEmail">Email</Label>
                                         <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here" />
@@ -25,7 +24,13 @@ class Contact extends Component {
                                         <Input type="textarea" name="text" id="exampleText" />
                                     </FormGroup>
                                     <Button>Submit</Button>
-                                </Form>
+                                </Form> */}
+
+                                <p className="email">Email: <a href="mailto:apark11278@gmail.com">apark11278@gmail.com</a></p>
+
+                                <a href="mailto:apark11278@gmail.com">
+                                    <img src={require("./linkedin.png")} className="linkedinLogo" alt="linkedin" />
+                                </a>
 
                             </div>
                         </Col>

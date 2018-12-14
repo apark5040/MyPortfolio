@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from "reactstrap";
-import Arrow from "../../components/Arrow";
 import "./Portfolio.scss";
 
 const items = [
