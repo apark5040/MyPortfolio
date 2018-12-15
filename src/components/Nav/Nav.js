@@ -47,10 +47,10 @@ class Nav extends Component {
             <header onClick={this.handleCloseMenu}>
                 <div id="mySidenav" className="sidenav">
                     <button className="closebtn" onClick={this.closeNav}>&times;</button>
-                    <a href="/MyPortfolio/">Home</a>
-                    <a href="/MyPortfolio/about">About</a>
-                    <a href="/MyPortfolio/portfolio">Portfolio</a>
-                    <a href="/MyPortfolio/contact">Contact</a>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/portfolio">Portfolio</a>
+                    <a href="/contact">Contact</a>
                 </div>
 
                 <button className={`mobile-menu-toggle nav-menu ${this.state.addOpen}`} onClick={this.openNav}>
@@ -59,10 +59,10 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                 </button>
 
-                <NavLink to="/MyPortfolio/">Home</NavLink>
-                <NavLink to="/MyPortfolio/about">About</NavLink>
-                <NavLink to="/MyPortfolio/portfolio">Portfolio</NavLink>
-                <NavLink to="/MyPortfolio/contact">Contact</NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/portfolio">Portfolio</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
 
 
                 <a href="https://github.com/apark5040">

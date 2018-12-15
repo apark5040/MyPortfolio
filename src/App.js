@@ -19,10 +19,10 @@ class App extends Component {
           <div id="stars3" />
           <Nav />
           <Switch>
-            <Route exact path="/MyPortfolio/" component={Main}></Route>
-            <Route exact path="/MyPortfolio/about" component={PageShell(About)}></Route>
-            <Route exact path="/MyPortfolio/contact" component={PageShell(Contact)}></Route>
-            <Route exact path="/MyPortfolio/portfolio" component={PageShell(Portfolio)}></Route>
+            <Route exact path="/" component={Main}></Route>
+            <Route exact path="/about" component={PageShell(About)}></Route>
+            <Route exact path="/contact" component={PageShell(Contact)}></Route>
+            <Route exact path="/portfolio" component={PageShell(Portfolio)}></Route>
           </Switch>
         </div>
       </Router>
