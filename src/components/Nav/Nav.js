@@ -59,7 +59,7 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                 </button>
 
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/MyPortfolio">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
