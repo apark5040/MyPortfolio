@@ -5,7 +5,7 @@ import "./Contact.scss";
 class Contact extends Component {
 
     componentDidMount(){
-        document.body.style.overflow = "";
+        document.body.style.overflow = "hidden";
     }
 
     render() {
