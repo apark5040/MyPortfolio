@@ -59,10 +59,10 @@ class Nav extends Component {
                     <span className="menu-item"></span>
                 </button>
 
-                <NavLink to="/MyPortfolio">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/MyPortfolio/">Home</NavLink>
+                <NavLink to="/MyPortfolio/about">About</NavLink>
+                <NavLink to="/MyPortfolio/portfolio">Portfolio</NavLink>
+                <NavLink to="/MyPortfolio/contact">Contact</NavLink>
 
 
                 <a href="https://github.com/apark5040">
