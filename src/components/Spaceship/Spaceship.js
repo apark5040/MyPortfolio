@@ -1,9 +1,9 @@
 import React from "react";
 import "./Spaceship.scss";
 
-const Spaceship = () => {
+const Spaceship = (props) => {
     return (
-        <div className="spaceship">
+        <div className="spaceship" {...props}>
             <div className="body"></div>
             <div id="window"></div>
             <div id="window2"></div>

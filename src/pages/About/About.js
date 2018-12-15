@@ -7,7 +7,7 @@ import "./About.scss";
 class About extends Component {
 
     componentDidMount() {
-
+        document.body.style.overflow = "";
     }
     render() {
         return (
@@ -21,7 +21,7 @@ class About extends Component {
                             <div class="screw bottom-right"></div>
 
                             <h1 className="size-decrease">About me</h1>
-                            <p>My name is Andrew Park.</p>
+                            <p>My name is Andrew Park</p>
                         </Col>
                         <Col xs={{ size: 6, offset: 1 }}>
                             <div className="skills">

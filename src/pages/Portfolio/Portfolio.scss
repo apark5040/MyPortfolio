@@ -1,6 +1,6 @@
 .portfolioText {
     background-color: #808385;
-    padding: 25px;
+    padding: 50px;
     border-radius: 25px;
     box-shadow: 7px 8px 0px 0px rgba(82,79,77,1);
 
@@ -27,4 +27,13 @@
         bottom: 20px;
         right: 25px;
     }
+}
+
+.image {
+    width: 650px;
+    height: 350px;
+}
+
+.imageCaption {
+    background-color: grey;
 }

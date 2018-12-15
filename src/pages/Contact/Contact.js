@@ -4,6 +4,10 @@ import "./Contact.scss";
 
 class Contact extends Component {
 
+    componentDidMount(){
+        document.body.style.overflow = "";
+    }
+
     render() {
         return (
             <div>

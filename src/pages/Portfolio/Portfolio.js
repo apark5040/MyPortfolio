@@ -4,19 +4,34 @@ import "./Portfolio.scss";
 
 const items = [
     {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 1',
-        caption: 'Slide 1'
+        src: require("./images/01.png"),
+        altText: 'Trial of Anima',
+        caption: 'A MERN stack video game',
+        url: "https://trialofanima.herokuapp.com/"
     },
     {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 2',
-        caption: 'Slide 2'
+        src: require("./images/02.png"),
+        altText: 'Steet Fighter Click Game',
+        caption: 'A React front-end memory game',
+        url: "https://apark5040.github.io/streetfighter-clicky-game/"
     },
     {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 3',
-        caption: 'Slide 3'
+        src: require("./images/03.png"),
+        altText: 'NYT Article Search',
+        caption: 'A MERN stack website that searches for New York Times ariticles',
+        url: "https://calm-castle-84267.herokuapp.com/"
+    },
+    {
+        src: require("./images/04.png"),
+        altText: 'Eat-Da-Burger',
+        caption: 'A simple application that incorporates SQL and Handlebars',
+        url: "https://eat-your-burger.herokuapp.com/"
+    },
+    {
+        src: require("./images/05.png"),
+        altText: 'Moodify',
+        caption: 'A front-end app that produces playlist based on facial recognition. Does not work due to facial recognition api removing free tier',
+        url: "https://github.com/apark5040/Moodify"
     }
 ];
 
@@ -30,6 +45,10 @@ class Portfolio extends Component {
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
+    }
+
+    componentDidMount() {
+        document.body.style.overflow = "";
     }
 
     onExiting() {
@@ -64,12 +83,13 @@ class Portfolio extends Component {
         const slides = items.map((item) => {
             return (
                 <CarouselItem
+                    className="custom-tag"
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img src={item.src} alt={item.altText} />
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                    <a href={item.url}><img className="image" src={item.src} alt={item.altText} /></a>
+                    <CarouselCaption captionText={item.caption} captionHeader={item.altText} />
                 </CarouselItem>
             );
         });
@@ -78,11 +98,20 @@ class Portfolio extends Component {
                 <Row>
                     <Col xs={{ size: 10, offset: 1 }}>
                         <div className="portfolioText text-center">
+                            <style>
+                                {
+                                    `.custom-tag {
+                                max-width: 100%;
+                                height: 490px;
+                                background: black;
+                                padding: 10px;
+                                }`
+                                }
+                            </style>
                             <div class="screw top-left"></div>
                             <div class="screw top-right"></div>
                             <div class="screw bottom-left"></div>
                             <div class="screw bottom-right"></div>
-                            <h1>Portfolio</h1>
                             <Carousel
                                 activeIndex={activeIndex}
                                 next={this.next}

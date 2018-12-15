@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./Main.scss";
-import { Transition, animated, config } from "react-spring";
+import { Transition, animated, config, Spring } from "react-spring";
 import Spaceship from "../../components/Spaceship";
 
 class Main extends Component {
@@ -12,6 +12,7 @@ class Main extends Component {
     }
 
     componentDidMount() {
+        document.body.style.overflow = "hidden";
         setTimeout(() => this.setState({ items1: ["A"] }), 0);
         setTimeout(() => this.setState({ items1: ["A", "n"] }), 200);
         setTimeout(() => this.setState({ items1: ["A", "n", "d"] }), 400);
@@ -56,7 +57,12 @@ class Main extends Component {
 
                     <Row>
                         <Col md={{ size: 4, offset: 4 }}>
-                            <Spaceship />
+                        <Spring 
+                            from={{y: 1000}}
+                            to={{y: 100}}
+                            config={{duration: 2500}}>
+                            {props => <Spaceship style={{top: props.y}}/>}
+                            </Spring>
                         </Col>
                     </Row>
                 </Container>
