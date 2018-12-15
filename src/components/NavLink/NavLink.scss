@@ -1,7 +1,7 @@
 .navLink {
     margin: 25px;
     background-color: red;
-    box-shadow: 0 5px 0 darkred;
+    box-shadow: 0 10px 0 darkred;
     color: white;
     padding: 1em 1.5em;
     position: relative;
@@ -21,7 +21,8 @@
 }
 
 .nav-active {
-    background-color: #4c000a;
+    background-color: #9b0404;
+    box-shadow: 0 5px 0 #540000;
 }
 
 @media only screen and (max-width: 810px) {

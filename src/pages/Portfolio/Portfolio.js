@@ -78,6 +78,10 @@ class Portfolio extends Component {
                 <Row>
                     <Col xs={{ size: 10, offset: 1 }}>
                         <div className="portfolioText text-center">
+                            <div class="screw top-left"></div>
+                            <div class="screw top-right"></div>
+                            <div class="screw bottom-left"></div>
+                            <div class="screw bottom-right"></div>
                             <h1>Portfolio</h1>
                             <Carousel
                                 activeIndex={activeIndex}

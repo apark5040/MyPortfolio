@@ -11,20 +11,14 @@ class Contact extends Component {
                     <Row>
                         <Col xs={{ size: 10, offset: 1 }}>
                             <div className="contactText text-center">
+
+                                <div class="screw top-left"></div>
+                                <div class="screw top-right"></div>
+                                <div class="screw bottom-left"></div>
+                                <div class="screw bottom-right"></div>
+
                                 <h1>Contact info</h1>
                                 <p>If you are looking for a developer that loves to create things with passion, please contact me!</p>
-                                {/* <Form>
-                                    <FormGroup>
-                                        <Label for="exampleEmail">Email</Label>
-                                        <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here" />
-                                    </FormGroup>
-
-                                    <FormGroup>
-                                        <Label for="exampleText">Text Area</Label>
-                                        <Input type="textarea" name="text" id="exampleText" />
-                                    </FormGroup>
-                                    <Button>Submit</Button>
-                                </Form> */}
 
                                 <p className="email">Email: <a href="mailto:apark11278@gmail.com">apark11278@gmail.com</a></p>
 
