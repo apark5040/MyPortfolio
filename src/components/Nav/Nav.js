@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import {Spring} from "react-spring";
 import NavLink from "../NavLink";
 import "./Nav.scss";
 import github from "./github.png";
