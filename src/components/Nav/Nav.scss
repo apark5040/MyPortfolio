@@ -73,6 +73,7 @@ header {
     width: 40px;
   }
   &:hover {
+    cursor: pointer;
     .menu-item {
       margin: 0 0 5px;
       &:first-child {

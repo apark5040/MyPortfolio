@@ -33,7 +33,7 @@ class About extends Component {
                                 <h1 className="text-center">Skills</h1>
                                 {Skills.map(skills => {
                                     return (
-                                        <div key={skills.id}>
+                                        <div className="skillItem" key={skills.id}>
                                             <div className="text-center">{skills.name}</div>
                                             <Spring
                                                 from={{ value: 0 }}

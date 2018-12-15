@@ -1,7 +1,7 @@
 .skills {
     background-color: #808385;
     border-radius: 25px;
-    padding: 25px;
+    padding: 33px;
     box-shadow: 7px 8px 0px 0px rgba(82,79,77,1);
 
     .screw {
@@ -76,4 +76,8 @@
         position: absolute;
         top: 0;
     }
+}
+
+.skillItem {
+    margin-top: 15px;
 }

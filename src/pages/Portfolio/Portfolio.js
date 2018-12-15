@@ -88,7 +88,7 @@ class Portfolio extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <a href={item.url}><img className="image" src={item.src} alt={item.altText} /></a>
+                    <a href={item.url} rel="noopener noreferrer" target="_blank"><img className="image" src={item.src} alt={item.altText} /></a>
                     <CarouselCaption captionText={item.caption} captionHeader={item.altText} />
                 </CarouselItem>
             );
