@@ -47,10 +47,10 @@ class Nav extends Component {
             <header onClick={this.handleCloseMenu}>
                 <div id="mySidenav" className="sidenav">
                     <button className="closebtn" onClick={this.closeNav}>&times;</button>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/portfolio">Portfolio</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/MyPortfolio/">Home</a>
+                    <a href="/MyPortfolio/about">About</a>
+                    <a href="/MyPortfolio/portfolio">Portfolio</a>
+                    <a href="/MyPortfolio/contact">Contact</a>
                 </div>
 
                 <button className={`mobile-menu-toggle nav-menu ${this.state.addOpen}`} onClick={this.openNav}>
