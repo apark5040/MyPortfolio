@@ -23,29 +23,28 @@ class About extends Component {
                             <h1 className="text-center">About me</h1>
                             <p>My name is Andrew Park. I have a bachelor's degree in Mathematics with concentration in Actuarial Science. 3 years after college, I started studying web development at Georgia Institute of Technology and decided that I wanted to pursue this career. I am passionate, a quick learner, and always willing to go the extra mile to learn more!</p>
                         </Col>
-                        <Col xs={{ size: 6, offset: 1 }}>
-                            <div className="skills">
+                        <Col className="skills" xs={{ size: 6, offset: 1 }}>
 
-                                <div className="screw top-left"></div>
-                                <div className="screw top-right"></div>
-                                <div className="screw bottom-left"></div>
-                                <div className="screw bottom-right"></div>
-                                <h1 className="text-center">Skills</h1>
-                                {Skills.map(skills => {
-                                    return (
-                                        <div className="skillItem" key={skills.id}>
-                                            <div className="text-center">{skills.name}</div>
-                                            <Spring
-                                                from={{ value: 0 }}
-                                                to={{ value: skills.number }}
-                                                config={{ delay: skills.time }}>
-                                                {props => <Progress color="info" value={props.value} />
-                                                }
-                                            </Spring>
-                                        </div>
-                                    )
-                                })}
-                            </div>
+
+                            <div className="screw top-left"></div>
+                            <div className="screw top-right"></div>
+                            <div className="screw bottom-left"></div>
+                            <div className="screw bottom-right"></div>
+                            <h1 className="text-center">Skills</h1>
+                            {Skills.map(skills => {
+                                return (
+                                    <div className="skillItem" key={skills.id}>
+                                        <div className="text-center">{skills.name}</div>
+                                        <Spring
+                                            from={{ value: 0 }}
+                                            to={{ value: skills.number }}
+                                            config={{ delay: skills.time }}>
+                                            {props => <Progress color="info" value={props.value} />
+                                            }
+                                        </Spring>
+                                    </div>
+                                )
+                            })}
                         </Col>
                     </Row>
                 </Container>
