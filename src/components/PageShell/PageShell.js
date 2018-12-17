@@ -24,7 +24,7 @@ const PageShell = Page => {
                             <Spring
                                 from={{ y: 350 }}
                                 to={{ y: -350 }}
-                                config={{ delay: 500, duration: 1000 }}>
+                                config={{ delay: 600, duration: 1000 }}>
                                 {props => <Spaceship style={{ top: props.y, left: -50 }} />}
                             </Spring>
                         </Col>
