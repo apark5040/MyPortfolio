@@ -26,19 +26,19 @@
     {
         "id": 5,
         "name": "React.js",
-        "number": 50,
+        "number": 65,
         "time": 800
     },
     {
         "id": 6,
         "name": "Node.js",
-        "number": 50,
+        "number": 68,
         "time": 1000
     },
     {
         "id": 7,
         "name": "SQL",
-        "number": 45,
+        "number": 57,
         "time": 1200
     },
     {
