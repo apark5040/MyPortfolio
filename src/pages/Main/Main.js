@@ -79,7 +79,7 @@ class Main extends Component {
                             <Spring
                                 from={{ y: 1000 }}
                                 to={{ y: 10 }}
-                                config={{ duration: 2500 }}>
+                                config={{ delay: 1000, duration: 2000 }}>
                                 {props => <Spaceship style={{ top: props.y }} />}
                             </Spring>
                         </Col>

@@ -20,8 +20,8 @@ html, body {
 }
 
 #stars {
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: transparent;
   box-shadow: $shadows-small;
@@ -30,17 +30,19 @@ html, body {
   &:after{
     content: " ";
     position: absolute;
+    border-radius: 50%;
+
     top: 200px;
-    width: 1px;
-    height: 1px;
+    width: 4px;
+    height: 4px;
     background: transparent;
     box-shadow: $shadows-small;
   }
 }
 
 #stars2 {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: transparent;
   box-shadow: $shadows-medium;
@@ -49,17 +51,19 @@ html, body {
   &:after{
     content: " ";
     position: absolute;
+    border-radius: 50%;
+
     top: 200px;
-    width: 2px;
-    height: 2px;
+    width: 5px;
+    height: 5px;
     background: transparent;
     box-shadow: $shadows-medium;
   }
 }    
 
 #stars3{
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: transparent;
   box-shadow: $shadows-big;
@@ -68,9 +72,11 @@ html, body {
   &:after{
     content: " ";
     position: absolute;
+    border-radius: 50%;
+
     top: 200px;
-    width: 3px;
-    height: 3px;
+    width: 6px;
+    height: 6px;
     background: transparent;
     box-shadow: $shadows-big;
   }
