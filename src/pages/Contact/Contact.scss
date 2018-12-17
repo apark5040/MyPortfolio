@@ -39,5 +39,8 @@
     font-size: 30px;
 }
 
-
-  
+@media only screen and (max-width: 465px) {
+    .email {
+        font-size: 5vw;
+    }
+}

@@ -5,7 +5,7 @@ import "./Contact.scss";
 class Contact extends Component {
 
     componentDidMount(){
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
     }
 
     render() {
@@ -16,10 +16,10 @@ class Contact extends Component {
                         <Col xs={{ size: 10, offset: 1 }}>
                             <div className="contactText text-center">
 
-                                <div class="screw top-left"></div>
-                                <div class="screw top-right"></div>
-                                <div class="screw bottom-left"></div>
-                                <div class="screw bottom-right"></div>
+                                <div className="screw top-left"></div>
+                                <div className="screw top-right"></div>
+                                <div className="screw bottom-left"></div>
+                                <div className="screw bottom-right"></div>
 
                                 <h1>Contact info</h1>
                                 <p>If you are looking for a developer that loves to create things with passion, please contact me!</p>

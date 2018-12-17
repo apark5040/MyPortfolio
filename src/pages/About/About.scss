@@ -81,3 +81,16 @@
 .skillItem {
     margin-top: 15px;
 }
+
+@media only screen and (max-width: 767px) {
+    .skills {
+        .bottom-left {
+            bottom: 130px;
+            left: 20px;
+        }
+        .bottom-right {
+            bottom: 130px;
+            right: 20px;
+        }
+    }
+}

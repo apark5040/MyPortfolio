@@ -108,10 +108,10 @@ class Portfolio extends Component {
                                 }`
                                 }
                             </style>
-                            <div class="screw top-left"></div>
-                            <div class="screw top-right"></div>
-                            <div class="screw bottom-left"></div>
-                            <div class="screw bottom-right"></div>
+                            <div className="screw top-left"></div>
+                            <div className="screw top-right"></div>
+                            <div className="screw bottom-left"></div>
+                            <div className="screw bottom-right"></div>
                             <Carousel
                                 activeIndex={activeIndex}
                                 next={this.next}

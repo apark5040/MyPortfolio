@@ -7,7 +7,7 @@ import "./About.scss";
 class About extends Component {
 
     componentDidMount() {
-        document.body.style.overflow = "";
+        // document.body.style.overflow = "";
     }
     render() {
         return (
@@ -15,10 +15,10 @@ class About extends Component {
                 <Container>
                     <Row>
                         <Col className="aboutText" xs={{ size: 4, offset: 1 }}>
-                            <div class="screw top-left"></div>
-                            <div class="screw top-right"></div>
-                            <div class="screw bottom-left"></div>
-                            <div class="screw bottom-right"></div>
+                            <div className="screw top-left"></div>
+                            <div className="screw top-right"></div>
+                            <div className="screw bottom-left"></div>
+                            <div className="screw bottom-right"></div>
 
                             <h1 className="text-center">About me</h1>
                             <p>My name is Andrew Park. I have a bachelor's degree in Mathematics with concentration in Actuarial Science. 3 years after college, I started studying web development at Georgia Institute of Technology and decided that I wanted to pursue this career. I am passionate, a quick learner, and always willing to go the extra mile to learn more!</p>
@@ -26,10 +26,10 @@ class About extends Component {
                         <Col xs={{ size: 6, offset: 1 }}>
                             <div className="skills">
 
-                                <div class="screw top-left"></div>
-                                <div class="screw top-right"></div>
-                                <div class="screw bottom-left"></div>
-                                <div class="screw bottom-right"></div>
+                                <div className="screw top-left"></div>
+                                <div className="screw top-right"></div>
+                                <div className="screw bottom-left"></div>
+                                <div className="screw bottom-right"></div>
                                 <h1 className="text-center">Skills</h1>
                                 {Skills.map(skills => {
                                     return (
