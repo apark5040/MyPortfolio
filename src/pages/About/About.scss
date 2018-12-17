@@ -94,3 +94,55 @@
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .skills {
+        .bottom-left {
+            bottom: 160px;
+            left: 20px;
+        }
+        .bottom-right {
+            bottom: 160px;
+            right: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 503px) and (max-width: 742px) {
+    .skills {
+        .bottom-left {
+            bottom: 130px;
+            left: 20px;
+        }
+        .bottom-right {
+            bottom: 130px;
+            right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .skills {
+        .bottom-left {
+            bottom: 130px;
+            left: 20px;
+        }
+        .bottom-right {
+            bottom: 130px;
+            right: 20px;
+        }
+    }
+}
+
+// @media only screen and (max-width: 501px) {
+//     .skills {
+//         .bottom-left {
+//             bottom: 230px;
+//             left: 20px;
+//         }
+//         .bottom-right {
+//             bottom: 230px;
+//             right: 20px;
+//         }
+//     }
+// }

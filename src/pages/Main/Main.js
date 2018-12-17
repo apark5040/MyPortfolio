@@ -46,20 +46,10 @@ class Main extends Component {
             <div>
                 <Container>
                     <Row>
-                        <Col xs={{ size: 10, offset: 2 }}>
+                        <Col xs={{ size: 10, offset: 1 }}>
                             <Transition
                                 native
                                 items={this.state.items1}
-                                from={{ opacity: 0, height: 0, transform: 'scale(2)' }}
-                                enter={[{ opacity: 1, height: 'auto' }, { transform: 'scale(1)' }]}
-                                leave={[{ transform: 'scale(1)', opacity: 0.5 }, { opacity: 0 }, { height: 0 }]}
-                                config={{ ...config.default, precision: 0.01, duration: 500 }}>
-                                {item => props => <animated.span style={props} className="name item text-center" id="name" children={item} />}
-                            </Transition>
-
-                            <Transition
-                                native
-                                items={this.state.items2}
                                 from={{ opacity: 0, height: 0, transform: 'scale(2)' }}
                                 enter={[{ opacity: 1, height: 'auto' }, { transform: 'scale(1)' }]}
                                 leave={[{ transform: 'scale(1)', opacity: 0.5 }, { opacity: 0 }, { height: 0 }]}
@@ -71,10 +61,24 @@ class Main extends Component {
                     </Row>
 
                     <Row>
+                        <Col xs={{size: 10, offset: 1}}>
+                        <Transition
+                                native
+                                items={this.state.items2}
+                                from={{ opacity: 0, height: 0, transform: 'scale(2)' }}
+                                enter={[{ opacity: 1, height: 'auto' }, { transform: 'scale(1)' }]}
+                                leave={[{ transform: 'scale(1)', opacity: 0.5 }, { opacity: 0 }, { height: 0 }]}
+                                config={{ ...config.default, precision: 0.01, duration: 500 }}>
+                                {item => props => <animated.span style={props} className="name item text-center" id="name" children={item} />}
+                            </Transition>
+                        </Col>
+                    </Row>
+
+                    <Row>
                         <Col md={{ size: 4, offset: 4 }}>
                             <Spring
                                 from={{ y: 1000 }}
-                                to={{ y: 100 }}
+                                to={{ y: 10 }}
                                 config={{ duration: 2500 }}>
                                 {props => <Spaceship style={{ top: props.y }} />}
                             </Spring>
