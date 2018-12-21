@@ -12,17 +12,17 @@ import PageShell from "./components/PageShell";
 class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div>
           <div id="stars" />
           <div id="stars2" />
           <div id="stars3" />
           <Nav />
           <Switch>
-            <Route exact path="/" component={Main}></Route>
-            <Route exact path="/about" component={PageShell(About)}></Route>
-            <Route exact path="/contact" component={PageShell(Contact)}></Route>
-            <Route exact path="/portfolio" component={PageShell(Portfolio)}></Route>
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Main}></Route>
+            <Route exact path={process.env.PUBLIC_URL + '/about'} component={PageShell(About)}></Route>
+            <Route exact path={process.env.PUBLIC_URL + '/contact'} component={PageShell(Contact)}></Route>
+            <Route exact path={process.env.PUBLIC_URL + '/portfolio'} component={PageShell(Portfolio)}></Route>
           </Switch>
         </div>
       </Router>
