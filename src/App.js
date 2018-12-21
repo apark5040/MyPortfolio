@@ -23,7 +23,6 @@ class App extends Component {
             <Route exact path={process.env.PUBLIC_URL + '/about'} component={PageShell(About)}></Route>
             <Route exact path={process.env.PUBLIC_URL + '/contact'} component={PageShell(Contact)}></Route>
             <Route exact path={process.env.PUBLIC_URL + '/portfolio'} component={PageShell(Portfolio)}></Route>
-            <Route path="*" component={Main} />
           </Switch>
         </div>
       </Router>
