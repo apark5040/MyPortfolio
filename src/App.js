@@ -19,10 +19,10 @@ class App extends Component {
           <div id="stars3" />
           <Nav />
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Main}></Route>
-            <Route exact path={process.env.PUBLIC_URL + '/about'} component={PageShell(About)}></Route>
-            <Route exact path={process.env.PUBLIC_URL + '/contact'} component={PageShell(Contact)}></Route>
-            <Route exact path={process.env.PUBLIC_URL + '/portfolio'} component={PageShell(Portfolio)}></Route>
+            <Route path={process.env.PUBLIC_URL + '/'} component={Main}></Route>
+            <Route path={process.env.PUBLIC_URL + '/about'} component={PageShell(About)}></Route>
+            <Route path={process.env.PUBLIC_URL + '/contact'} component={PageShell(Contact)}></Route>
+            <Route path={process.env.PUBLIC_URL + '/portfolio'} component={PageShell(Portfolio)}></Route>
           </Switch>
         </div>
       </Router>
