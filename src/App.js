@@ -12,7 +12,7 @@ import PageShell from "./components/PageShell";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <div id="stars" />
           <div id="stars2" />
