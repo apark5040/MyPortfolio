@@ -4,6 +4,12 @@ import "./Portfolio.scss";
 
 const items = [
     {
+        src: require("./images/06.png"),
+        altText: 'Emoji Print',
+        caption: 'A front end React Native app where you can copy emojis to your clipboard by simply pressing a button. Only available on Google Play Store',
+        url: "https://play.google.com/store/apps/details?id=com.pickles.simpleemoji"
+    },
+    {
         src: require("./images/01.png"),
         altText: 'Trial of Anima',
         caption: 'A MERN stack video game',
